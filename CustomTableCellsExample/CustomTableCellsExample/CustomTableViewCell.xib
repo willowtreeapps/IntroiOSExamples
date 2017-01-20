@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="storyCell" rowHeight="287" id="pGv-Iu-ZQh" customClass="CustomTableViewCell" customModule="CustomTableCellsExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="287"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pGv-Iu-ZQh" id="zsN-Vj-AmN">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="286"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="This would be the title label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5R-PE-zh6">
+                        <rect key="frame" x="20" y="10" width="400" height="21.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="410" placeholderIntrinsicHeight="234.5" text="This will be the description label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFL-fM-NfH">
+                        <rect key="frame" x="20" y="42" width="400" height="234.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iFL-fM-NfH" secondAttribute="bottom" constant="10" id="9jb-fB-0Mc"/>
+                    <constraint firstAttribute="trailing" secondItem="iFL-fM-NfH" secondAttribute="trailing" constant="10" id="D99-vS-LiL"/>
+                    <constraint firstItem="G5R-PE-zh6" firstAttribute="leading" secondItem="zsN-Vj-AmN" secondAttribute="leading" constant="20" id="W5l-rQ-sLw"/>
+                    <constraint firstItem="iFL-fM-NfH" firstAttribute="leading" secondItem="zsN-Vj-AmN" secondAttribute="leading" constant="20" id="Za8-Tj-o9j"/>
+                    <constraint firstAttribute="trailing" secondItem="G5R-PE-zh6" secondAttribute="trailing" constant="10" id="kXC-bB-CXx"/>
+                    <constraint firstItem="G5R-PE-zh6" firstAttribute="top" secondItem="zsN-Vj-AmN" secondAttribute="top" constant="10" id="kde-x2-iVR"/>
+                    <constraint firstItem="iFL-fM-NfH" firstAttribute="top" secondItem="G5R-PE-zh6" secondAttribute="bottom" constant="10" id="vs3-KN-GCJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="iFL-fM-NfH" id="GlO-Kg-0Qf"/>
+                <outlet property="titleLabel" destination="G5R-PE-zh6" id="yW8-NS-psE"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="-67.5"/>
+        </tableViewCell>
+    </objects>
+</document>
